@@ -8,6 +8,7 @@ public class Scoop {
         this.flavor = flavor;
         this.price = price;
     }
+
     public String getFlavor() {
         return flavor;
     }
@@ -15,6 +16,4 @@ public class Scoop {
     public double getPrice() {
         return price;
     }
-
 }
-
