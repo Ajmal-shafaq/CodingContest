@@ -16,5 +16,12 @@ public class Cone {
         return true;
     }
 
+    public List<Scoop> getScoops() {
+        return scoops;
     }
+
+    public Date getDate() {
+        return date;
+    }
+}
 
