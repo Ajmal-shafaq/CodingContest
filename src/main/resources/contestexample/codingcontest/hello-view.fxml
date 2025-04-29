@@ -1,26 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <MenuButton mnemonicParsing="false" text="MenuButton">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Action 1">
-               <graphic>
-                  <Button mnemonicParsing="false" text="Button" />
-               </graphic>
-            </MenuItem>
-          <MenuItem mnemonicParsing="false" text="Action 2">
-               <graphic>
-                  <Button mnemonicParsing="false" text="Button" />
-               </graphic>
-            </MenuItem>
-        </items>
-      </MenuButton>
-   </children>
-</HBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ComboBox fx:id="Vanila" layoutX="65.0" layoutY="200.0" prefWidth="150.0" promptText="Vanila" />
+        <ComboBox fx:id="Chocolate" layoutX="65.0" layoutY="223.0" prefWidth="150.0" promptText="Chocolate" />
+        <ComboBox fx:id="Strawberry" layoutX="65.0" layoutY="249.0" prefWidth="150.0" promptText="Strawberry" />
+        <Button layoutX="39.0" layoutY="348.0" mnemonicParsing="false" onAction="#Finish" text="Button" />
+        <Button layoutX="517.0" layoutY="348.0" mnemonicParsing="false" onAction="#Scoop" text="Button" />
+        <ComboBox fx:id="Flavour" layoutX="65.0" layoutY="274.0" onAction="#Handletheflavour" prefWidth="150.0" promptText="Flavour" />
+        <MenuBar layoutY="1.0" prefHeight="25.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Label fx:id="labelmenue" contentDisplay="TOP" layoutX="202.0" layoutY="81.0" prefHeight="31.0" prefWidth="232.0" text="Ice Cream Menue" textAlignment="CENTER" textFill="#2d31b5" textOverrun="LEADING_ELLIPSIS">
+            <font>
+                <Font name="System Bold Italic" size="21.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

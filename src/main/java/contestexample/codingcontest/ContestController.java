@@ -93,4 +93,10 @@ import java.util.Map;
             alert.setContentText(message);
             alert.showAndWait();
         }
-}
+        @FXML
+        private void HandleTheFlavour() {
+            String selected = flavorComboBox.getValue();
+            System.out.println("Flavor selected: " + selected);
+        }
+
+    }
