@@ -16,4 +16,10 @@ public class Scoop {
     public double getPrice() {
         return price;
     }
+
+    @Override
+    public String toString() {
+        return flavor + " (The Price is :- " + price + " CHF)";
+    }
 }
+
